@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sign">
+      <div class="header">
+        <h1 class="line-name"></h1>
+        <p class="show-all" onclick="showAllStations()">Voir toute la ligne</p>
+        <p class="show-lines" onclick="showAllLines()">Voir toute les lignes</p>
+      </div>
+      <h2 class="choose">Choisis une station !</h2>
+      <ol class="line"></ol>
+      <div class="top-review-container">
+        <div class="top-review">
+          <h3>Top avis:</h3>
+          <div class="card">
+          </div>
+        </div>
+      </div>
+      <div class="reviews-container">
+        <div class="reviews">
+        </div>
+      </div>
+      <div class="legend">
+        <div class="rate">
+          <div class="stars">0<span></span></div>
+          <div class="gradient"></div>
+          <div class="stars">5<span></span></div>
+        </div>
+        <div class="nb-rate">
+          <div><span></span>0 avis</div>
+          <div><span></span>500 avis</div>
+        </div>
+      </div>
+      <button class="arrow-left" onclick="goLeft()"></button>
+      <button class="arrow-right" onclick="goRight()"></button>
+    </section>
+    <div id="midle">
+      <div id="trait"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="SubwayStations.json"></script>
+  <script type="text/javascript" src="index.js"></script>
+</html>
